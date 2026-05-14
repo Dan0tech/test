@@ -350,37 +350,37 @@
   <main class="wrap">
     <section class="top">
       <div class="card">
-        <h1>اسکنر DNS برای کانفیگ VLESS → WireGuard</h1>
+        <h1>DNS Scanner \/PN</h1>
         <p class="sub">
           این صفحه بدون پایتون، بدون سرور، بدون افزونه و فقط با مرورگر اجرا می‌شود.
-          تست از داخل همان مرورگری انجام می‌شود که با VPN باز شده است.
+          تست از داخل همان مرورگری انجام می‌شود که با همان کانفیگ باز شده است.
         </p>
         <div class="notice">
           مرورگر اجازه ICMP ping یا UDP DNS خام نمی‌دهد. عددها «Latency مرورگر به endpoint همان DNS» هستند، نه ping خام سیستم.
-          برای انتخاب DNS بهتر داخل همین مسیر VPN کافی است.
+          برای انتخاب DNS بهتر داخل همین مسیر کانفیگ کافی است.
         </div>
 
         <div class="grid">
           <div class="stat">
-            <div class="k">بهترین VLESS</div>
+            <div class="k">بهترین برای VLESS</div>
             <div class="v" id="bestVless">-</div>
           </div>
           <div class="stat">
-            <div class="k">بهترین WireGuard</div>
+            <div class="k">بهترین برای WireGuard</div>
             <div class="v" id="bestWg">-</div>
           </div>
           <div class="stat">
-            <div class="k">DNS ذخیره‌شده VLESS</div>
+            <div class="k">Best DNS VLESS</div>
             <div class="v" id="savedVless">-</div>
           </div>
           <div class="stat">
-            <div class="k">DNS ذخیره‌شده WG</div>
+            <div class="k">Best DNS Wireguard</div>
             <div class="v" id="savedWg">-</div>
           </div>
         </div>
 
         <div class="statusline">
-          <span id="status">آماده تست</span>
+          <span id="status"> Ready Test</span>
           <span id="counter"></span>
         </div>
         <div class="bar"><div id="progress"></div></div>
@@ -408,7 +408,7 @@
             </select>
           </div>
 
-          <button id="startBtn">شروع اسکن</button>
+          <button id="startBtn"> Start Scan </button>
           <button id="clearBtn" class="btn2">پاک کردن cache نتیجه سایت</button>
         </div>
       </div>
@@ -428,10 +428,10 @@
           <tr>
             <th>رتبه</th>
             <th>گروه</th>
-            <th>Tag کانفیگ</th>
+            <th>اسم کانفیگ</th>
             <th>DNS داخل کانفیگ</th>
             <th>Endpoint تست مرورگر</th>
-            <th>بهترین</th>
+            <th>بهترین+</th>
             <th>میانگین</th>
             <th>نمونه‌ها</th>
             <th>وضعیت</th>
@@ -441,8 +441,8 @@
       </table>
 
       <div class="footer">
-        نتیجه بهتر یعنی همان endpoint از داخل مسیر VPN فعلی سریع‌تر جواب داده است.
-        اگر VPN خاموش باشد، نتیجه مربوط به اینترنت عادی دستگاه است و به کانفیگ تو ربطی ندارد.
+        نتیجه بهتر یعنی همان endpoint از داخل مسیر کانفیگ فعلی سریع‌تر جواب داده است.
+        اگر کانفیگ خاموش باشد، نتیجه مربوط به اینترنت عادی دستگاه است و به کانفیگ تو ربطی ندارد.
       </div>
     </section>
   </main>
